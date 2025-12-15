@@ -1,0 +1,4 @@
+[flake8]
+ignore = E111, E201, E202, E121, E114
+max-line-length = 120
+exclude = .git,__pycache__,node_modules

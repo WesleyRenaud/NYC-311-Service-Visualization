@@ -1,0 +1,8 @@
+flake8
+pytest
+coverage
+pandas
+sqlalchemy
+pymysql
+requests
+python-dotenv

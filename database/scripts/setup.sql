@@ -1,0 +1,48 @@
+use nyc_311;
+
+DROP TABLE IF EXISTS incidentdb;
+
+create table if not exists incidentdb
+(
+    unique_key varchar(255) primary key,
+    created_date timestamp null,
+    closed_date timestamp null,
+    agency varchar(255) null,
+    agency_name varchar(255) null,
+    complaint_type varchar(255) null,
+    descriptor varchar(255) null,
+    location_type varchar(255) null,
+    incident_zip varchar(255) null,
+    incident_address varchar(255) null,
+    street_name varchar(255) null,
+    cross_street_1 varchar(255) null,
+    cross_street_2 varchar(255) null,
+    intersection_street_1 varchar(255) null,
+    intersection_street_2 varchar(255) null,
+    address_type varchar(255) null,
+    city varchar(255) null,
+    landmark varchar(255) null,
+    facility_type varchar(255) null,
+    status varchar(255) null,
+    due_date timestamp null,
+    resolution_description text null,
+    resolution_action_updated_date timestamp null,
+    community_board varchar(255) null,
+    borough varchar(255) null,
+    x_coordinate_state_plane float,
+    y_coordinate_state_plane float,
+    open_data_channel_type varchar(255) null,
+    park_facility_name varchar(255) null,
+    park_borough varchar(255) null,
+    vehicle_type varchar(255) null,
+    taxi_company_borough varchar(255) null,
+    taxi_pick_up_location varchar(255) null,
+    bridge_highway_name varchar(255) null,
+    bridge_highway_direction varchar(255) null,
+    road_ramp varchar(255) null,
+    bridge_highway_segment varchar(255) null,
+    latitude float null,
+    longitude float null,
+    location varchar(255) null,
+    bbl varchar(255) null
+);
